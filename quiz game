@@ -1,0 +1,351 @@
+
+int level;
+String fq = "What is the largest continent?";
+String sq = "Where is Bulgaria?";
+String tq = "What is the biggest country in the world?";
+String foq = "What is the longest river on Earth?";
+String fiq = "How many oceans are there in the world?";
+String siq = "What is the smallest counry in the world?";
+String seq = "What is the most spoken language?";
+String eq = "What is the capital of Bulgaria?";
+String nq = "How many states are there in The USA?";
+String teq = "What is the biggest ocean?";
+int score = 0;
+ 
+void setup() {
+  size(700, 600);
+}
+ 
+void draw() {
+  switch(level) {
+  case 0:
+  case 1:
+    level1();
+    break;
+  case 2:
+    level2();
+    break;
+  case 3:
+    level3();
+    break;
+  case 4:
+    level4();
+    break;
+  case 5:
+    level5();
+    break;
+  case 6:
+    level6();
+    break;
+  case 7:
+    level7();
+    break;
+  case 8:
+    level8();
+    break;
+  case 9:
+    level9();
+    break;
+  case 10:
+    level10();
+    break;
+  case 11:
+    end();
+    break;
+  }
+}
+ 
+void level1() {
+  background(#22E3DE);
+  fill(0);
+  textSize(40);
+  text(fq, 25, 50);
+ 
+  textSize(50);
+  text("Asia", 130, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(50);
+  text("Europe", 430, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(50);
+  text("Africa", 100, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(50);
+  text("Australia", 400, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX > 50 && mouseX <260 && mouseY >205 && mouseY<262 && mousePressed) {
+    score=1;
+    level=2;
+  }
+}
+ 
+void level2() {
+  background(#22E3DE);
+  textSize(40);
+  text(sq, 25, 50);
+  textSize(30);
+  fill(0);
+  text("In North America", 60, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(35);
+  text(" In Europe", 425, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(35);
+  text("In Africa", 100, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(35);
+  text("In Antarctica", 400, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX >395 && mouseX <635 && mouseY >205 && mouseY<262 && mousePressed) {
+    score=2;
+    level=3;
+  }
+}
+ 
+ 
+ 
+void level3() {
+  background(#22E3DE);
+  background(#22E3DE);
+  textSize(30);
+  fill(0);
+  text(tq, 25, 50);
+  textSize(50);
+  text("Poland", 105, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(50);
+  text("China", 430, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(50);
+  text("India", 110, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(50);
+  text("Russia", 430, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX > 395 && mouseX <635 && mouseY >355 && mouseY<402 && mousePressed) {
+    score=3;
+    level=4;
+  }
+}
+ 
+ 
+void level4() {
+  background(#22E3DE);
+  textSize(35);
+  text(foq, 25, 50);
+fill(0);
+  textSize(50);
+  text("Danube", 90, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(50);
+  text("Amazon", 410, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(50);
+  text("Nile", 130, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(50);
+  text("Congo", 430, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX > 50 && mouseX <410 && mouseY >355 && mouseY<402 && mousePressed) {
+    score=4;
+    level=5;
+  }
+}
+void level5() {
+  background(#22E3DE);
+  textSize(30);
+  text(fiq, 25, 50);
+  textSize(40);
+  fill(0);
+  text("Eight", 120, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(40);
+  text(" Five", 455, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(40);
+  text("Seven", 115, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(40);
+  text("Four", 460, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX >395 && mouseX <635 && mouseY >205 && mouseY<262 && mousePressed) {
+    score=5;
+    level=6;
+  }
+}
+ 
+void level6() {
+  background(#22E3DE);
+  fill(0);
+  textSize(30);
+  text(siq, 30, 50);
+  fill(0);
+  textSize(40);
+  text("Vatican City", 70, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(50);
+  text("Serbia", 430, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(50);
+  text("Monaco", 90, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(40);
+  text("San Marino", 400, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX > 50 && mouseX <260 && mouseY >205 && mouseY<262 && mousePressed) {
+    score=6;
+    level=7;
+  }
+}
+ 
+void level7() {
+  background(#22E3DE);
+  fill(0);
+  textSize(30);
+  text(seq, 50, 50);
+  fill(0);
+  textSize(50);
+  text("Spanish", 90, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(50);
+  text("German", 410, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(50);
+  text("English", 100, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(50);
+  text("Mandarin", 400, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX > 395 && mouseX <635 && mouseY >355 && mouseY<402 && mousePressed) {
+    score=7;
+    level=8;
+  }
+}
+void level8() {
+  background(#22E3DE);
+  fill(0);
+  textSize(35);
+  text(eq, 25, 50);
+  fill(0);
+  textSize(55);
+  text("Plovdiv", 80, 255);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(55);
+  text("Sofia", 435, 255);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(55);
+  text("Varna", 100, 403);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(55);
+  text("Pravets", 410, 402);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX >395 && mouseX <635 && mouseY >205 && mouseY<262 && mousePressed) {
+    score=8;
+    level=9;
+  }
+}
+ 
+void level9() {
+  background(#22E3DE);
+  fill(0);
+  textSize(30);
+  text(nq, 50, 50);
+  fill(0);
+  textSize(50);
+  text("55", 140, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(50);
+  text("46", 470, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(50);
+  text("50", 140, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(50);
+  text("39", 470, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX > 50 && mouseX <410 && mouseY >355 && mouseY<402 && mousePressed) {
+    score=9;
+    level=10;
+  }
+}
+ 
+void level10() {
+  background(#22E3DE);
+  fill(0);
+  textSize(40);
+  text(teq, 50, 50);
+  textSize(20);
+  text("The Pacific Ocean", 100, 250);
+  noFill();
+  rect(50, 205, 260, 57);
+  textSize(20);
+  text("The Atlantic Ocean", 410, 250);
+  noFill();
+  rect(395, 205, 230, 57);
+  textSize(20);
+  text("The Indian Ocean", 90, 400);
+  noFill();
+  rect(50, 355, 260, 57);
+  textSize(20);
+  text("The Southern Ocean", 400, 400);
+  noFill();
+  rect(395, 355, 230, 57);
+  text(score, 650, 480);
+  if (mouseX > 50 && mouseX <280
+    && mouseY >205 && mouseY<262 && mousePressed){
+    score=10;
+    level=11;
+  }
+}
+void end() {
+  background(#22E3DE);
+  text("Congratulations!", 200, 250);
+  textSize(40);
+  fill(0);
+  text("You reached the end of the quizz.", 25, 290);
+}
